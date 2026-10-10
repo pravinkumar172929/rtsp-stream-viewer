@@ -1,0 +1,15 @@
+# Everything in one command:  docker compose up --build
+# then open http://localhost:8080 and click "Add all" under Demo streams.
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"   # web UI + API + WebSocket
+      - "8554:8554"   # demo RTSP server (try: ffplay rtsp://localhost:8554/cam1)
+    environment:
+      DEMO_STREAMS: "true"
+      LOG_LEVEL: info
+      # MAX_STREAMS: 16
+      # OUTPUT_MAX_WIDTH: 960
+      # VIDEO_BITRATE: 1000k
+    restart: unless-stopped

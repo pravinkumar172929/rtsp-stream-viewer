@@ -1,0 +1,13 @@
+# Render Blueprint: New > Blueprint > pick this repo.
+services:
+  - type: web
+    name: rtsp-stream-viewer
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter        # the free plan (0.1 CPU) is too slow to transcode video
+    healthCheckPath: /healthz
+    envVars:
+      - key: DEMO_STREAMS
+        value: "true"
+      - key: ALLOWED_ORIGINS
+        value: "*"       # or your Vercel URL, e.g. https://rtsp-viewer.vercel.app

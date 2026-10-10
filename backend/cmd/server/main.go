@@ -12,9 +12,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/your-username/rtsp-stream-viewer/backend/internal/config"
-	"github.com/your-username/rtsp-stream-viewer/backend/internal/server"
-	"github.com/your-username/rtsp-stream-viewer/backend/internal/stream"
+	"github.com/pravinkumar172929/rtsp-stream-viewer/backend/internal/config"
+	"github.com/pravinkumar172929/rtsp-stream-viewer/backend/internal/server"
+	"github.com/pravinkumar172929/rtsp-stream-viewer/backend/internal/stream"
 )
 
 func main() {

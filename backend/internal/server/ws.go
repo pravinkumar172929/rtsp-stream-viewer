@@ -10,7 +10,7 @@ import (
 
 	"github.com/coder/websocket"
 
-	"github.com/your-username/rtsp-stream-viewer/backend/internal/stream"
+	"github.com/pravinkumar172929/rtsp-stream-viewer/backend/internal/stream"
 )
 
 const (

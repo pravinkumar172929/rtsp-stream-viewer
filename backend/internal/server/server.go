@@ -11,8 +11,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/your-username/rtsp-stream-viewer/backend/internal/config"
-	"github.com/your-username/rtsp-stream-viewer/backend/internal/stream"
+	"github.com/pravinkumar172929/rtsp-stream-viewer/backend/internal/config"
+	"github.com/pravinkumar172929/rtsp-stream-viewer/backend/internal/stream"
 )
 
 // Server wires the stream manager to HTTP handlers.
